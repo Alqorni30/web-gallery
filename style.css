@@ -10,7 +10,7 @@
     --primary-color: #ffffff;
     --secondary-color: #011627;
     --input-color: #01162763;
-    --custom-color: #6338ec;
+    --custom-color: #0facd7;
     --card-color: #ededff; 
 }
 .dark-mode-active{
@@ -40,8 +40,8 @@ header .navbar .box-navbar{
     
 }
 header .navbar .box-navbar .logo h1 {
-    font-family: "Roboto", sans-serif;
     color: var(--primary-color);
+    font-size: 2rem;
 }
 header .navbar .box-navbar .logo span{
     color: var(--secondary-color);
@@ -57,9 +57,8 @@ header .navbar .box-navbar .menu li{
 header .navbar .box-navbar .menu li a{
     text-decoration: none;
     color: var(--secondary-color);
-    font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1rem;
 }
 header .navbar .box-navbar .menu li a:hover{
     color: var(--primary-color);
@@ -92,7 +91,7 @@ header .navbar .box-navbar .btn-switch .dark-mode.active{
     text-align: center;
 }
 .hero .box-hero h1{
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 10px;
     line-height: 1.1;
     font-weight: 900;
@@ -115,7 +114,8 @@ header .navbar .box-navbar .btn-switch .dark-mode.active{
 }
 .icon a:hover{
     background-color: var(--custom-color);
-    border-radius: 50px;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
 }
 .hero .box-hero .btn button{
     min-width: 120px;
@@ -130,7 +130,7 @@ header .navbar .box-navbar .btn-switch .dark-mode.active{
     transition: .4s;
 }
 .hero .box-hero .btn button:hover{
-    transform: scale(1.2);
+    background-color: #1dc4f3;
 }
 .hero .box-hero .btn a{
     color: white;
@@ -174,18 +174,22 @@ header .navbar .box-navbar .btn-switch .dark-mode.active{
 }
 .quotes .box-quotes{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.quotes .box-quotes h1{
+.quotes h1{
     font-size: 60px;
+    text-align: center;
     margin-bottom: 50px;
     line-height: 1.1;
     font-weight: 900;
     color: var(--secondary-color);
 }
 .quotes .box-quotes .quote1{
-    width: 500px;
+    width: 100%;
     height: 200px;
     display: inline-block;
     margin-right: 20px;
@@ -196,14 +200,14 @@ header .navbar .box-navbar .btn-switch .dark-mode.active{
     transition: .4s;
 }    
 .quotes .box-quotes .quote2{
-    width: 500px;
+    width: 100%;
     height: 200px;
     margin-bottom: 30px;
     display: inline-block;
     background-color: var(--card-color);
     padding: 30px;
     border-radius: 10px;
-    transition: .4s;
+    transition: .2s;
 }
 .quotes .box-quotes .quote1:hover{
     background-color: #c1c1ec;
@@ -222,6 +226,7 @@ footer{
     padding-bottom: 15px;
     background-color: var(--custom-color);
     color: white;
+    font-size: 15px;
     margin-top: 50px;
     text-align: center;
 }
@@ -231,7 +236,7 @@ footer{
     text-decoration: none;
     right: 1rem;
     bottom: 3rem;
-    padding: .3rem;
+    padding: .3rem .4rem;
     background-color: #07e630;
     border-radius: .4rem;
     transition: .4s;
@@ -354,8 +359,18 @@ footer{
     .hero .box-hero p{
         padding-inline: 20px;
     }
+    .quotes .box-quotes{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .quotes h1{
+        font-size: 40px;
+    }
     .quotes .box-quotes .quote1{
-        width: 200px;
+        width: 300px;
         height: 300px;
         display: inline-block;
         margin-right: 20px;
@@ -366,7 +381,7 @@ footer{
         transition: .4s;
     }    
     .quotes .box-quotes .quote2{
-        width: 200px;
+        width: 300px;
         height: 300px;
         margin-bottom: 30px;
         display: inline-block;
